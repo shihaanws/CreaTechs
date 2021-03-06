@@ -1,0 +1,42 @@
+.ue-input-group {
+    margin-bottom:15px;
+}
+
+input[type="text"] {
+    height: 60px;
+    max-width: 270px; 
+    font-size:30px;
+    line-height:60px;       
+    background-color: transparent;
+    color: $primary-color-light;
+    border: solid 2px $primary-color-light;
+    border-radius: 4px;  
+    padding:0 15px;    
+    vertical-align:top;  
+    .reversed & {
+        color: $primary-color-dark;
+        border-color: $primary-color-dark;        
+    }
+}
+
+.ue-button {    
+    width:65px;
+    height:65px;
+    display:inline-block; 
+    position: relative; 
+    line-height:65px;
+    text-align:center;  
+    background-color: $primary-color-light;
+    color: $primary-color-dark;
+    box-sizing: border-box;
+    border: solid 2px $primary-color-light;
+    border-radius: 4px; 
+    &::after {
+        position:relative;
+        content: "F";
+        font-family: 'Keller';
+        font-size: 60px;
+        color: $primary-color-dark;  
+        top:5px;      
+    }
+}

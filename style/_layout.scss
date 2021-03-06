@@ -1,0 +1,43 @@
+body {
+    background-color: $primary-color-dark;
+    color: $primary-color-light;
+    padding-right: 80px; 
+    @include selection {
+        background: $primary-color-light;
+        color: $primary-color-dark;      
+    } 
+    &.show-sidebar {
+        padding-right: $controls-width + 80;
+    }    
+    &.reversed {
+        background-color: $primary-color-light;
+        color: $primary-color-dark;
+        @include selection {
+            background: $primary-color-dark;
+            color: $primary-color-light;      
+        }        
+    }
+}
+
+.ue-module {
+    display: none;
+    padding: 40px;
+    &.active {
+        display: block;
+    }    
+}
+
+.ue-content {
+    padding: 1.5em 0;
+    img {
+        max-width: 100%;
+        margin-bottom: 1em;        
+        .hide-images & {
+            display: none;
+        }
+    }
+    p {
+        font-size: 1.25em;
+        margin-bottom: 1em;
+    }
+}

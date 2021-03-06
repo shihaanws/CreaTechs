@@ -1,0 +1,103 @@
+#ue-sidebar {
+    background: $primary-color-light;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -350px;
+    width: 350px;
+    z-index: 9999999;
+    line-height: 100%;
+    letter-spacing: 0;    
+    @include transition(right .2s ease-out);
+    .reversed & {
+        background: $primary-color-dark;
+    }
+    .show-sidebar & {
+        right: 0;
+    }
+}
+.ue-sidebar-header {
+    height: 80px;
+    background-color: $primary-color-dark;
+    .reversed & {
+        background-color: $primary-color-light;
+    }
+    .ue-sidebar-close {
+        display: block;
+        width: 80px;
+        height: 80px;
+        background: darken($primary-color-dark, 10%);
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Keller";
+        cursor: pointer;
+        .reversed & {
+            background: darken($primary-color-light, 10%);
+        }
+    }
+}
+.ue-sidebar-widgets {
+    color: $primary-color-dark;
+    height: 100%;
+    > li {
+        display: none;
+        height: 100%;
+        &.show {
+            display: block;
+        }
+    }
+}
+.ue-video,
+.ue-microphone,
+.ue-sound {    
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.widget-icon {
+    font-size: 200px;
+    line-height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    font-family: "Keller";
+    display: table-cell;
+    vertical-align: middle;
+    padding-top:45px;
+    cursor:pointer;
+    .reversed & {
+        color: $primary-color-light;
+    }
+    &.voice-widget-icon {
+        font-size: 250px;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        left: 80px;
+        top: 50%;
+        right: 80px;
+        border: 5px solid #FD4646;
+        @include transform(rotate(-45deg));     
+    }
+    &.active:after {
+        height: 150px;
+        width: 150px;        
+        left: 50%;
+        top: 50%;
+        z-index: -1;      
+        margin-top: -85px;
+        margin-left: -85px;
+        border-width: 10px;
+        opacity: 0;
+        @include border-radius(90px);
+        @include animation(pulsate 1.5s ease-out infinite);        
+    }    
+}
+
+@include keyframes(pulsate) {
+    0% { @include transform(scale(0.1, 0.1)); opacity: 0.0; }
+    50% { opacity: 1.0; }
+    100% { @include transform(scale(1.2, 1.2)); opacity: 0.0; }
+}

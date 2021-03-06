@@ -1,0 +1,8 @@
+{
+    "preset": "google",
+    "validateIndentation": 4,
+    "maximumLineLength": 180,
+    "disallowMultipleVarDecl": false,
+    "disallowSpacesInsideObjectBrackets": false,
+    "requireCapitalizedConstructors": false
+}
