@@ -2,6 +2,11 @@
 
 A basic job portal site to its accessible version just with inclusion of several HTML attributes. **Supports voice, keyboard and lot more. .** Content on the website can be delivered by the speech generator feature.
 
+<p align="center">
+	<img src="https://raw.githubusercontent.com/theneoterik/CreaTechs/main/Screenshot%20from%202021-03-07%2007-51-15.png" width="300">
+</p>
+
+
 
 ## Navigation options
 
