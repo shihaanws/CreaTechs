@@ -5,7 +5,7 @@
     <script src="../dist/js/keller-lib.js"></script>    
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="../dist/css/keller-lib.css">    
 </head>
 <body>
@@ -17,24 +17,18 @@
         <a href="#" class="left">
         <div class="navbar">
           <a href="#">Home</a>
-          <a href="job.html">Job</a>
-          <a href="tool.html">Tool</a>
-          <div class="dropdown1">
-            <button class="dropbtn">Resources
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown1-content">
-              <a href="sponsorship.html">Sponsorship</a>
-              <a href="smartcampaign.html">Smart Campaign</a>
-            </div>
-            </div>
-          <a href="client.html">Client</a>
+          <a href="#">Jobs</a>
+          
           <a href="SignUp.html" class="right">Sign In/Sign Up</a>
           
          
-          <form class="example" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-          </form>
+          <div class="container">
+            <form action="https://www.google.com/search" method="get" target="_blank" id="search-form">
+              <input name="q"  type="text" placeholder="Search Google..." autocomplete="off" autofocus>
+              <!-- <button type="button"><i class="fas fa-microphone"></i></button> -->
+            </form>
+            <p class="info" style="color: white; margin-right: 120px;"></p>
+          </div>
             
         </div>
         </div>
@@ -46,8 +40,8 @@
         <h2 style="color: rgb(52, 52, 216);"><center>Advances Job Search</center></h2>
         <ul>
           <li><a href="bystate.html">By State</a></li>
-          <li><a href="bymetroarea.html">By Abilities</a></li>
-          <li><a href="bycategory.html">By Category</a></li>
+          <li><a href="byability.html">By Abilities</a></li>
+          <li><a href="index.html">By Category</a></li>
           <li><a href="bycompany.html">By Company</a></li>
         </ul>
         </div>
@@ -467,7 +461,7 @@
         </div>
 
         
-
+        <script src="searchscript.js"></script> 
 
     <script>
     document.addEventListener("DOMContentLoaded", function(event) { 
