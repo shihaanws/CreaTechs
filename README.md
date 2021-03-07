@@ -1,4 +1,4 @@
-# Job Portal for Disabled People
+# Job Portal for Differently abled.
 
 A basic job portal site to its accessible version just with inclusion of several HTML attributes. **Supports voice, keyboard and lot more. .** Content on the website can be delivered by the speech generator feature.
 
