@@ -23,3 +23,6 @@ In 2030 330 million people are estimated to be visually impaired worldwide: 39 m
 The web is full of tips on how to design websites for blind users, most of which are geared toward making your website accessible to screen readers. But as you can tell by looking at the numbers above, there is a large middle ground. The majority of individuals with visual impairments, even those who are considered legally blind, don't need or use screen-reading software. However, the web can still be a difficult and difficult place to navigate when one can't quite see it clearly.
 
 The idea behind this project is to develop  an easy to install tool that will help the disabled people to access as much of the internet content as possible.
+
+## Vision:
+https://cutt.ly/EzpCBtX
